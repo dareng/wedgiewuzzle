@@ -1,0 +1,41 @@
+@import '../../../stylesheets/reset.css';
+
+$columns: 12;
+$column-width: 60;
+$gutter-width: 20;
+$total-width: 100%;
+
+$width-mod: 10px; // ideally half gutter-width
+
+////////////
+// LAYOUT //
+////////////
+
+
+
+
+#maincolumn {@include column(6);}
+#sidebar {@include column(3);}
+nav {@include column(3);}
+footer, header {@include column(12);}
+
+#maincolumn, #sidebar, nav, footer, header  {
+	margin-bottom: $width-mod;
+}
+
+
+
+
+@media screen and (max-width: 720px) {
+	#maincolumn,
+	#sidebar, nav {
+		@include column(12);
+		
+	}
+	.box {
+		min-height: 100px!important;
+		margin-right: $width-mod*2;
+		
+		
+	}
+}

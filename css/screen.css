@@ -1,0 +1,88 @@
+@import url(../../../stylesheets/reset.css);
+body {
+  width: 100%;
+  *zoom: 1; }
+  body:before, body:after {
+    content: "";
+    display: table; }
+  body:after {
+    clear: both; }
+
+#page {
+  max-width: 980px;
+  margin: 0 auto; }
+
+#maincolumn {
+  display: inline;
+  float: left;
+  width: 47.91667%;
+  margin: 0 1.04167%; }
+
+#sidebar {
+  display: inline;
+  float: left;
+  width: 22.91667%;
+  margin: 0 1.04167%; }
+
+nav {
+  display: inline;
+  float: left;
+  width: 22.91667%;
+  margin: 0 1.04167%; }
+
+footer, header {
+  display: inline;
+  float: left;
+  width: 97.91667%;
+  margin: 0 1.04167%; }
+
+#maincolumn, #sidebar, nav, footer, header {
+  margin-bottom: 10px; }
+
+@media screen and (max-width: 720px) {
+  #maincolumn,
+  #sidebar, nav {
+    display: inline;
+    float: left;
+    width: 97.91667%;
+    margin: 0 1.04167%; }
+
+  .box {
+    min-height: 100px!important;
+    margin-right: 20px; } }
+body {
+  background-color: #dedede;
+  font-family: arial; }
+  body p {
+    font-size: .8em; }
+  body h1 {
+    font-size: 1.5em;
+    color: #15336f;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4); }
+
+.box {
+  background-color: rgba(255, 0, 0, 0.2);
+  min-height: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(PIE.htc);
+  /* This lets IE know to call the script on all elements which get the 'box' class */
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  background-color: #999999;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#dedede));
+  background-image: -webkit-linear-gradient(top, #999999, #dedede);
+  background-image: -moz-linear-gradient(top, #999999, #dedede);
+  background-image: -ms-linear-gradient(top, #999999, #dedede);
+  background-image: -o-linear-gradient(top, #999999, #dedede);
+  background-image: linear-gradient(top, #999999, #dedede);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
+
+.page-block {
+  min-height: 400px; }
