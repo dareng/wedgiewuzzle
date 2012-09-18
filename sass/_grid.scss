@@ -1,13 +1,9 @@
-/////////////////
-// Semantic.gs // for SCSS: http://sass-lang.com/
-/////////////////
 
-// Defaults which you can freely override
 $column-width: 60px;
 $gutter-width: 10px;
 $columns: 12;
 
-// Utility function — you should never need to modify this
+// Utility function 
 @function gridsystem-width($columns:$columns) {
 	@return ($column-width * $columns) + ($gutter-width * $columns);
 }
@@ -34,9 +30,9 @@ $total-width: gridsystem-width($columns);
 }
 
 
-//////////
+
 // GRID //
-//////////
+
 
 body {
 	width: 100%;

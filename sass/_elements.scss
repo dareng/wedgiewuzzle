@@ -1,0 +1,11 @@
+.box {
+	@include red(.2);
+	min-height: 50px;
+	margin-bottom: 10px;
+	padding:  10px;
+	@include border-radius(5px);
+	@include box-shadow(2px, 2px,5px,rgba(0,0,0,.4));
+	@include background-gradient($col1, $col2);
+	
+	
+}

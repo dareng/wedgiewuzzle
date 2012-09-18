@@ -1,0 +1,29 @@
+.navbar {
+	padding: 0px 0px 20px 0px;
+ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	li {
+
+		a {
+			display: block;
+			border-bottom: solid 1px #888;
+			line-height: ($genLineHeight)+10;
+			padding-left: 10px;
+			text-decoration: none;
+			color:  $navTextColor;
+			font-size: $fontSize;
+			font-weight: bold;
+		}
+		
+
+		:hover{
+			background-color:$navOverColor;
+			color: $navTextOverColor;
+		}
+	}
+
+}
+
+}

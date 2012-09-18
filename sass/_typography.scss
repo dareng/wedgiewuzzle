@@ -1,0 +1,20 @@
+
+
+p {
+	font-size: $fontSize;
+	line-height: $genLineHeight;
+	color:$textColor1;
+}
+h1 {
+	font-size: $fontSize*2;
+	color:$titleColor1;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	@include text-shadow( 1px,  1px, 0px, rgba(0,0,0,.4));
+
+}
+
+h2 {
+	font-size: $fontSize*1.5;
+	color:$titleColor2;
+}

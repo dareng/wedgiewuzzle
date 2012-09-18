@@ -12,56 +12,44 @@ body {
   max-width: 980px;
   margin: 0 auto; }
 
-#maincolumn {
+#main {
   display: inline;
   float: left;
-  width: 47.91667%;
-  margin: 0 1.04167%; }
+  width: 65.47619%;
+  margin: 0 0.59524%; }
 
 #sidebar {
   display: inline;
   float: left;
-  width: 22.91667%;
-  margin: 0 1.04167%; }
+  width: 15.47619%;
+  margin: 0 0.59524%; }
 
 nav {
   display: inline;
   float: left;
-  width: 22.91667%;
-  margin: 0 1.04167%; }
+  width: 15.47619%;
+  margin: 0 0.59524%; }
 
 footer, header {
   display: inline;
   float: left;
-  width: 97.91667%;
-  margin: 0 1.04167%; }
+  width: 98.80952%;
+  margin: 0 0.59524%; }
 
-#maincolumn, #sidebar, nav, footer, header {
-  margin-bottom: 10px; }
+#main, #sidebar, nav, footer, header {
+  margin-bottom: 2.5px; }
 
 @media screen and (max-width: 720px) {
-  #maincolumn,
+  #main,
   #sidebar, nav {
     display: inline;
     float: left;
-    width: 97.91667%;
-    margin: 0 1.04167%; }
+    width: 98.80952%;
+    margin: 0 0.59524%; }
 
   .box {
     min-height: 100px!important;
-    margin-right: 20px; } }
-body {
-  background-color: #dedede;
-  font-family: arial; }
-  body p {
-    font-size: .8em; }
-  body h1 {
-    font-size: 1.5em;
-    color: #15336f;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4); }
-
+    margin-right: 12.5px; } }
 .box {
   background-color: rgba(255, 0, 0, 0.2);
   min-height: 50px;
@@ -84,5 +72,44 @@ body {
   background-image: linear-gradient(top, #999999, #dedede);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$startColor, EndColorStr=$endColor); }
 
-.page-block {
+.navbar {
+  padding: 0px 0px 20px 0px; }
+  .navbar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px; }
+    .navbar ul li a {
+      display: block;
+      border-bottom: solid 1px #888;
+      line-height: 30px;
+      padding-left: 10px;
+      text-decoration: none;
+      color: #333333;
+      font-size: 0.8em;
+      font-weight: bold; }
+    .navbar ul li :hover {
+      background-color: #333333;
+      color: white; }
+
+p {
+  font-size: 0.8em;
+  line-height: 20px;
+  color: #666666; }
+
+h1 {
+  font-size: 1.6em;
+  color: #333333;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4); }
+
+h2 {
+  font-size: 1.2em;
+  color: #111111; }
+
+body {
+  background-color: #dedede;
+  font-family: arial; }
+
+.navbar, .main-content, .sidebar {
   min-height: 400px; }
