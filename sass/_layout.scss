@@ -26,6 +26,9 @@ footer, header {@include column(12);}
 	margin-bottom: $width-mod;
 }
 
+#sidebar {
+	margin-right: 0px;
+}
 
 @media screen and (max-width: 720px) {
 	#main,
