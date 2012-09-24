@@ -4,6 +4,15 @@ ul {
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
+	
+	li:first-child {
+		a {@include border-radius(20px 0px 0px 0px);}
+		:hover {
+		@include border-radius(20px 0px 0px 0px);
+		}
+	}
+	
+	
 	li {
 
 		a {
@@ -15,13 +24,18 @@ ul {
 			color:  $navTextColor;
 			font-size: $fontSize;
 			font-weight: bold;
+			@include transition-property(background-color);
+			@include transition-duration(.3s);
+			@include transition-timing-function(ease-in);
+			
 		}
+		
 		
 
 		:hover{
 			background-color:$navOverColor;
 			color: $navTextOverColor;
-		}
+					}
 	}
 
 }

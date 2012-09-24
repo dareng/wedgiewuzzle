@@ -10,7 +10,7 @@ h1 {
 	color:$titleColor1;
 	padding-top: 10px;
 	padding-bottom: 0px;
-	@include text-shadow( 1px,  1px, 0px, rgba(0,0,0,.4));
+	@include d-text-shadow( 1px,  1px, 0px, rgba(0,0,0,.4));
 
 }
 

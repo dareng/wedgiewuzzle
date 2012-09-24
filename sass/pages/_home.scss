@@ -1,0 +1,46 @@
+
+$default-text-shadow-color: rgba(white, 1);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 1px;
+ 
+
+
+@mixin button {
+display: block;
+padding: 10px;
+text-align: center;
+@include background-image(linear-gradient(#dedede, #fefefe 30%, #bbbbbb 70%, #aaaaaa)); 
+@include border-radius(4px);
+color: #333;
+text-decoration: none;
+font-weight: bold;
+@include single-text-shadow;
+font-size: .8em;
+border: 1px solid #666666;
+
+}
+
+
+#home{
+	
+	
+	.main-content {
+		a {
+		@include button;
+		width: 200px;
+		@include transition-property(background-color);
+		@include transition-duration(.3s);
+		@include transition-timing-function(ease-in);
+				
+		}
+		
+		a:hover {
+			background-image: none;
+			background-color: #888888;
+			
+		}
+		
+		
+	}
+	
+}

@@ -1,25 +1,14 @@
+
+
+@import "compass";
 @import "core";
 @import "grid";
 @import "libs/lib";
-@import "layout";
+
 
 @import "elements";
 @import "navbar";
 @import "typography";
+@import "layout";
 
-
-body {
-	background-color:#dedede;
-	font-family: arial;
-}
-
-
-
-
-
-.navbar, .main-content, .sidebar {
-	min-height: $pageHeight;
-	/*?*/
-	
-}
-
+@import "pages/home";
